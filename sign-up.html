@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Five Star Restaurant | Best Restaurant</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="font-awesom/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<div>
+		<div class="container">
+			<div class="row">
+				<div class="offset-md-2 offset-lg-3 col-12 col-sm-12 col-md-8 col-lg-6">
+					<div class="sign-up-box">
+						<div class="user-logo">
+							<h5><i class="fa fa-user" aria-hidden="true"></i></h5>
+						</div>
+						<h5 class="text-center mt-3">Sign up <span><i class="fa fa-arrow-down" aria-hidden="true"></i></span></h5><hr>
+
+						<form action="sign-up-controller.php" method="post" id="frm">
+
+							<div class="form-group">
+								<input type="text" name="user_name" id="user_name" required="" class="form-control" placeholder="User Name">
+							</div>
+
+							<div class="form-group">
+								<input type="gmail" name="user_gmail" id="user_gmail" required="" class="form-control" placeholder="User Gmail ID">
+							</div>
+
+							<div class="input-group form-group">
+							  	<input type="password" class="form-control" placeholder="Create password" required="" name="password" id="password">
+
+							   	<div class="input-group-append">
+							    	<a class="input-group-text" id="password-icon">
+							    		<i class="fa fa-eye" aria-hidden="true" id="icon"></i>
+							    	</a>
+								</div>
+							</div>
+
+							<div class="input-group form-group">
+								<input type="password" name="confirm_password" id="confirm_password" required="" placeholder="Confirm password" class="form-control">
+
+								<div class="input-group-append">
+
+							    	<a class="input-group-text" id="confirm_password-icon">
+							    		<i class="fa fa-eye icon" aria-hidden="true"></i>
+							    	</a>
+								</div>
+							</div>
+							<div class="alert alert-warning mt-2 incorrect_password text-danger" role="alert" id="incorrect_password"></div>
+
+							<div class="form-group">
+								<label>Gender</label>&nbsp; &nbsp;
+
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="gender" id="male" value="male">
+									<label class="form-check-label" for="male">Male</label>
+								</div>
+
+								<div class="form-check form-check-inline">
+								    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+								    <label class="form-check-label" for="female">Female</label>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<textarea class="form-control" rows="4" cols="30" id="address" name="address" placeholder="Address"></textarea>
+							</div>
+
+							<button type="submit" class="btn btn-lg btn-block">Submit</button>
+						</form><hr>
+
+						<div class="row">
+							<div class="col-6  col-md-6"><a href="sign-in.html">New User? Sign In</a></div>
+
+							<div class="col-6  col-md-6 text-right"><a href="index.html">New User? Back to Home Page</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

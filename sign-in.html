@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Five Star Restaurant | Best Restaurant</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="font-awesom/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="offset-0 offset-sm-0 offset-md-2 offset-lg-3 col-12 col-sm-12 col-md-8 col-lg-6">
+				<div class="sign-in-box">
+					<div class="user-logo">
+						<h5><i class="fa fa-user" aria-hidden="true"></i></h5>
+					</div>
+					<h5 class="text-center mt-3">Sign In</h5><hr>
+
+					<form action="sign-in-controller.php" method="post" id="sign-in-form" class="form">
+						<div class="form-group">
+							<input type="text" name="user_name" id="user_name" class="form-control" required="" placeholder="Name">
+						</div>
+
+						<div class="input-group">
+						  	<input type="password" class="form-control" placeholder="Password" required="" id="password" name="password">
+						   	<div class="input-group-append">
+						    	<a class="input-group-text" id="password-icon">
+						    		<i class="fa fa-eye" aria-hidden="true" id="icon"></i>
+						    	</a>
+						  	</div>
+						</div>
+						<div class="incorrect_password" id="incorrect_password"></div><br>
+
+						<button type="submit" class="btn btn-warning btn-block">SUBMIT</button><hr>
+					</form>
+
+					<div class="row">
+						<div class="col-6 col-md-6"><a href="sign-up.html">New User? Sign Up</a></div>
+
+						<div class="col-6 col-md-6 text-right"><a href="index.html">New User? Back to Home Page</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+	
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>	
+</body>
+</html>
